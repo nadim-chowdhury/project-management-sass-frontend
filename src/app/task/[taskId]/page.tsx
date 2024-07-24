@@ -1,6 +1,6 @@
-import TimeTracking from "../../components/TimeTracking";
-import ProjectAnalytics from "../../components/ProjectAnalytics";
-import GanttChart from "../../components/GanttChart";
+import TimeTracking from "@/components/TimeTracking";
+import ProjectAnalytics from "@/components/ProjectAnalytics";
+import GanttChart from "@/components/GanttChart";
 
 const ProjectPage = () => {
   return (

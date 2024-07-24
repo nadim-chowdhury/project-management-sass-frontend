@@ -1,8 +1,8 @@
 import { GetServerSideProps } from "next";
-import ProjectDetails from "../../components/ProjectDetails";
-import api from "../../utils/api";
+import api from "@/utils/api";
+import ProjectDetails from "@/components/ProjectDetails";
 
-const ProjectPage = ({ project }) => {
+const ProjectPage = ({ project }: any) => {
   return (
     <div className="max-w-3xl mx-auto mt-8">
       <ProjectDetails project={project} />

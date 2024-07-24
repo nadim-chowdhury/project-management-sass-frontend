@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import api from "../../utils/api";
+import api from "@/utils/api";
 
-const UserDetails = ({ userId }) => {
-  const [user, setUser] = useState(null);
+const UserDetails = ({ userId }: any) => {
+  const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

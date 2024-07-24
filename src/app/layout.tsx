@@ -5,7 +5,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import { AppProps } from "next/app";
 import { auth } from "../lib/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
+// import { useAuthState } from "react-firebase-hooks/auth";
 import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,15 +20,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [user, loading] = useAuthState(auth);
+  // const [user, loading] = useAuthState(auth);
 
-  useEffect(() => {
-    if (user) {
-      // User is signed in, redirect to dashboard or home page
-    } else {
-      // User is signed out, redirect to login page
-    }
-  }, [user]);
+  // useEffect(() => {
+  //   if (user) {
+  //     // User is signed in, redirect to dashboard or home page
+  //   } else {
+  //     // User is signed out, redirect to login page
+  //   }
+  // }, [user]);
 
   return (
     <html lang="en">

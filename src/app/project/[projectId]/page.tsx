@@ -1,9 +1,9 @@
-import { useRouter } from "next/router";
-import Chat from "../../components/Chat";
+import { useParams } from "next/navigation";
+import Chat from "@/components/Chat";
 
 const ProjectPage = () => {
-  const router = useRouter();
-  const { projectId } = router.query;
+  const params = useParams();
+  const { projectId } = params;
 
   return (
     <div className="min-h-screen bg-gray-100">
