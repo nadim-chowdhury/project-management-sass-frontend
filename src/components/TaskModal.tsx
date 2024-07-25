@@ -1,6 +1,8 @@
+"use client";
+
 import { useState } from "react";
 
-const TaskModal = ({ task }) => {
+const TaskModal = ({ task }:any) => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {

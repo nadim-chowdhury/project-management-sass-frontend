@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 const ProjectSettings = () => {
@@ -27,7 +29,7 @@ const ProjectSettings = () => {
     });
   };
 
-  const handleIntegrationChange = (integration, checked) => {
+  const handleIntegrationChange = (integration:any, checked:any) => {
     const updatedIntegrations = checked
       ? [...projectSettings.integrations, integration]
       : projectSettings.integrations.filter((int) => int !== integration);

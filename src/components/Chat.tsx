@@ -1,11 +1,14 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import firebase from "firebase/app";
 import "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { auth, db } from "../lib/firebase";
+import Image from 'next/image'
 
-const Chat = ({ projectId }) => {
+const Chat = ({ projectId }:any) => {
   const [user] = useAuthState(auth);
   const [message, setMessage] = useState("");
 
@@ -16,7 +19,7 @@ const Chat = ({ projectId }) => {
   const query = messagesRef.orderBy("createdAt").limit(25);
   const [messages] = useCollectionData(query, { idField: "id" });
 
-  const sendMessage = async (e) => {
+  const sendMessage = async (e:any) => {
     e.preventDefault();
 
     if (!message.trim()) return;
@@ -37,7 +40,7 @@ const Chat = ({ projectId }) => {
       <div className="bg-white rounded-lg shadow-md p-4 mb-4">
         <div className="overflow-y-auto max-h-96">
           {messages &&
-            messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
+            messages.map((msg:any) => <ChatMessage key={msg.id} message={msg} />)}
         </div>
         <form onSubmit={sendMessage} className="mt-4 flex items-center">
           <input
@@ -59,15 +62,17 @@ const Chat = ({ projectId }) => {
   );
 };
 
-const ChatMessage = ({ message }) => {
+const ChatMessage = ({ message }:any) => {
   const { text, uid, displayName, photoURL } = message;
 
   return (
     <div className="flex mb-2">
-      <img
+      <Image
         src={photoURL || "/avatar-placeholder.png"}
         alt="Profile"
         className="w-8 h-8 rounded-full mr-2"
+        width={480}
+        height={480}
       />
       <div>
         <p className="font-semibold">{displayName}</p>

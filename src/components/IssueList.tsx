@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import IssueModal from "./IssueModal"; // Assuming you have a IssueModal component for issue details
 

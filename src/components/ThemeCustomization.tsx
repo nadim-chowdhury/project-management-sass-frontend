@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const ThemeCustomization = () => {
   // Example: Theme customization settings state
   const [themeSettings, setThemeSettings] = useState({
