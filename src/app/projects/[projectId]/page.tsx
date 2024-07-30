@@ -10,20 +10,20 @@ const ProjectPage = ({ project }: any) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { projectId } = context.params;
-  try {
-    const response = await api.get(`/projects/${projectId}`);
-    const project = response.data;
-    return {
-      props: { project },
-    };
-  } catch (error) {
-    console.error("Error fetching project:", error);
-    return {
-      notFound: true,
-    };
-  }
-};
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+//   const { projectId } = context.params;
+//   try {
+//     const response = await api.get(`/projects/${projectId}`);
+//     const project = response.data;
+//     return {
+//       props: { project },
+//     };
+//   } catch (error) {
+//     console.error("Error fetching project:", error);
+//     return {
+//       notFound: true,
+//     };
+//   }
+// };
 
 export default ProjectPage;
