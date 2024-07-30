@@ -9,16 +9,15 @@ const api = axios.create({
 
 export default api;
 
+// import axios from "axios";
 
-import axios from "axios";
+// const API_BASE_URL = "https://api.example.com/";
 
-const API_BASE_URL = "https://api.example.com/";
+// const api = axios.create({
+//   baseURL: API_BASE_URL,
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
 
-const api = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
-
-export default api;
+// export default api;

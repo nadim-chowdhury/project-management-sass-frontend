@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import api from "@/utils/api";
 
@@ -27,8 +29,8 @@ const UserDetails = ({ userId }: any) => {
   return (
     <div>
       <h1>User Details</h1>
-      <p>Name: {user.name}</p>
-      <p>Email: {user.email}</p>
+      <p>Name: {user?.name}</p>
+      <p>Email: {user?.email}</p>
       {/* Display other user details */}
     </div>
   );

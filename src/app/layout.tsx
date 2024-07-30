@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { AppProps } from "next/app";
 import { auth } from "../lib/firebase";
 // import { useAuthState } from "react-firebase-hooks/auth";
-import "../styles/globals.css";
+// import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

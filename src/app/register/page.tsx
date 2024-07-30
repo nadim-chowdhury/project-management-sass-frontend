@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import api from "@/utils/api";
 
@@ -43,6 +45,8 @@ const Register = () => {
             placeholder="Password"
           />
           <select
+            title="select-role"
+            name=""
             value={role}
             onChange={(e) => setRole(e.target.value)}
             className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mt-2"

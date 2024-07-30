@@ -63,7 +63,7 @@ const Dashboard = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <nav className="flex justify-between">
             <Link href="/dashboard">
-              <a className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
+              <span className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -76,10 +76,10 @@ const Dashboard = () => {
                   />
                 </svg>
                 <span>Dashboard</span>
-              </a>
+              </span>
             </Link>
             <Link href="/projects">
-              <a className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
+              <span className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -92,10 +92,10 @@ const Dashboard = () => {
                   />
                 </svg>
                 <span>Projects</span>
-              </a>
+              </span>
             </Link>
             <Link href="/tasks">
-              <a className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
+              <span className="text-gray-500 hover:text-gray-900 px-4 py-2 flex items-center space-x-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -108,7 +108,7 @@ const Dashboard = () => {
                   />
                 </svg>
                 <span>Tasks</span>
-              </a>
+              </span>
             </Link>
             {/* Add more navigation links as needed */}
           </nav>

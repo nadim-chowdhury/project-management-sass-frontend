@@ -12,9 +12,9 @@ const firebaseConfig = {
   measurementId: "YOUR_MEASUREMENT_ID",
 };
 
-if (!firebase.apps.length) {
+if (!(firebase as any).apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-export const db = firebase.firestore();
-export const auth = firebase.auth();
+// export const db = firebase.firestore();
+// export const auth = firebase.auth();
