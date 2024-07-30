@@ -15,7 +15,6 @@
     "react": "^18",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18",
-    "react-gantt-chart": "^0.3.0-rc.11",
     "socket.io-client": "^4.7.5"
   },
   "devDependencies": {
